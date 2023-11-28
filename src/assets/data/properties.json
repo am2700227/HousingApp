@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "Name": "Birla house",
+    "Type": "House",
+    "Price": 12000
+  },
+  {
+    "id": 2,
+    "Name": "Pathak Mansion",
+    "Type": "House",
+    "Price": 34500
+  },
+  {
+    "id": 3,
+    "Name": "Mishra Sweet Home",
+    "Type": "House",
+    "Price": 82000
+  },
+  {
+    "id": 4,
+    "Name": "Sharma Mansion",
+    "Type": "House",
+    "Price": 78000
+  },
+  {
+    "id": 5,
+    "Name": "Jha Apartment",
+    "Type": "House",
+    "Price": 62000
+  },
+  {
+    "id": 6,
+    "Name": "Verma villa",
+    "Type": "House",
+    "Price": 56000
+  },
+  {
+    "id": 7,
+    "Name": "Gupta Housing",
+    "Type": "House",
+    "Price": 67800
+  },
+  {
+    "id": 8,
+    "Name": "Aurya Kunba",
+    "Type": "House",
+    "Price": 45600
+  },
+  {
+    "id": 9,
+    "Name": "Putlibai Chawri",
+    "Type": "House",
+    "Price": 78965
+  },
+  {
+    "id": 10,
+    "Name": "Javed Manson",
+    "Type": "House",
+    "Price": 76554
+  },
+  {
+    "id": 11,
+    "Name": "Birla Mansion",
+    "Type": "House",
+    "Price": 78900
+  },
+  {
+    "id": 12,
+    "Name": "Tata Villa",
+    "Type": "House",
+    "Price": 98765
+  }
+]

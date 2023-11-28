@@ -1,13 +1,21 @@
-<div class="row">
-  <div class="shadow-lg col-sm-3">
-    <div class="card">
-      <img class="propImg" src="assets/housinggimg.jpg" />
-      <div class="card-body p-2">
-        <h1>{{ Property.id }}</h1>
-        <h1>{{ Property.Name }}</h1>
-        <h1>{{ Property.type }}</h1>
-        <h1>{{ Property.Price }}</h1>
-      </div>
-    </div>
+<div class="card">
+  <div class="card-img-wrapper">
+  <img class="card-img-top" src="assets/coloredhouse.jpg" />
+<ul class="list-inline text-center member-icons">
+  <li class="list-inline-item">
+    <button class="btn btn-primary">E</button>
+  </li>
+  <li class="list-inline-item">
+    <button class="btn btn-primary">C</button>
+
+  </li>
+</ul>
+</div>
+
+  <div class="card-body p-2 m-4">
+    <h1>{{ property.id }}</h1>
+    <h3>{{ property.Name }}</h3>
+    <h3>{{ property.type }}</h3>
+    <h3>{{ property.Price }}</h3>
   </div>
 </div>
