@@ -1,5 +1,4 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { PropertyI } from 'src/app/Services/property-i';
 
 @Component({
   selector: 'app-property-card',
