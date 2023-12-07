@@ -18,6 +18,10 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2022",
+    "typeRoots": [
+      "src/alertifytype.d.ts",
+      "node_modules/@types"
+    ],
     "module": "ES2022",
     "useDefineForClassFields": false,
     "lib": [
