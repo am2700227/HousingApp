@@ -2,73 +2,94 @@
   {
     "id": 1,
     "Name": "Birla house",
+    "SellRent":1,
     "Type": "House",
-    "Price": 12000
+    "Price": 12000,
+    "Image":"house6"
   },
   {
     "id": 2,
     "Name": "Pathak Mansion",
+    "SellRent":2,
     "Type": "House",
-    "Price": 34500
+    "Price": 34500,
+    "Image":"house2"
   },
   {
     "id": 3,
     "Name": "Mishra Sweet Home",
+    "SellRent":2,
     "Type": "House",
-    "Price": 82000
+    "Price": 82000,
+    "Image":"house3"
   },
   {
     "id": 4,
     "Name": "Sharma Mansion",
+    "SellRent":1,
     "Type": "House",
-    "Price": 78000
+    "Price": 78000,
+    "Image":"house4"
   },
   {
     "id": 5,
     "Name": "Jha Apartment",
+    "SellRent":1,
     "Type": "House",
-    "Price": 62000
+    "Price": 62000,
+    "Image":"house5"
   },
   {
     "id": 6,
     "Name": "Verma villa",
+    "SellRent":2,
     "Type": "House",
-    "Price": 56000
+    "Price": 56000,
+    "Image":"house6"
   },
   {
     "id": 7,
     "Name": "Gupta Housing",
+    "SellRent":2,
     "Type": "House",
-    "Price": 67800
+    "Price": 67800,
+    "Image":"house7"
   },
   {
     "id": 8,
     "Name": "Aurya Kunba",
+    "SellRent":1,
     "Type": "House",
-    "Price": 45600
+    "Price": 45600,
+    "Image":"house8"
   },
   {
     "id": 9,
     "Name": "Putlibai Chawri",
+    "SellRent":1,
     "Type": "House",
     "Price": 78965
   },
   {
     "id": 10,
     "Name": "Javed Manson",
+    "SellRent":1,
     "Type": "House",
-    "Price": 76554
+    "Price": 76554,
+    "Image":"house9"
   },
   {
     "id": 11,
     "Name": "Birla Mansion",
+    "SellRent":1,
     "Type": "House",
-    "Price": 78900
+    "Price": 78900,
+    "Image":"house9"
   },
   {
     "id": 12,
     "Name": "Tata Villa",
+    "SellRent":2,
     "Type": "House",
-    "Price": 98765
-  }
+    "Price": 98765  }
 ]
