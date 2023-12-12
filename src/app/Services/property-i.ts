@@ -1,5 +1,5 @@
 export interface PropertyI {
-  id: number,
+  Id: number,
   SellRent:number,
   Name:string,
   Type:string,

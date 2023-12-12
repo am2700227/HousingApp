@@ -58,9 +58,9 @@
             <input type="text" class="form-control" formControlName="mobile" />
           </div>
           <span>
-            <span *ngIf="registrationForm.get('mobile')?.hasError('minlength')">
+            <div *ngIf="registrationForm.get('mobile')?.hasError('minlength')" class="error-block">
               mobile should be at least 9 characters long
-            </span>
+            </div>
           </span>
 
           <div class="form-group col-12">

@@ -42,8 +42,6 @@ export class UserRegisterComponent implements OnInit {
     }
     else{
       this.alertify.success("Kindly filled the required field")
-
-
     }
 
 

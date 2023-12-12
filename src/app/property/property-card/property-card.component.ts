@@ -10,5 +10,5 @@ export class PropertyCardComponent implements OnInit{
   ngOnInit(): void {
   }
   @Input()
-  property!: PropertyI;
+  property: PropertyI;
 }

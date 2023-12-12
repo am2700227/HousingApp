@@ -1,5 +1,7 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { AlertifyService } from 'src/app/Services/alertify.service';
 import { AuthService } from 'src/app/Services/auth.service';
 
 @Component({
@@ -8,20 +10,25 @@ import { AuthService } from 'src/app/Services/auth.service';
   styleUrls: ['./user-login.component.css']
 })
 export class UserLoginComponent implements OnInit {
-  constructor(private authService:AuthService){}
+  constructor(private authService:AuthService,private alertify:AlertifyService, private router:Router){}
 
   ngOnInit(): void {
   }
 
   onLogin(loginForm:NgForm){
     console.log(loginForm.value);
-    const user=this.authService.authUser(loginForm.value)
-    if(user){
-      console.log("Login successful");
+    const token=this.authService.authUser(loginForm.value)
+    if(token){
+      // console.log("Login successful");
+      localStorage.setItem('token',token.userName)
+      this.alertify.success("Congrats,you are successfully login")
+      this.router.navigate(['/'])
 
     }
     else{
-      console.log("Login not successful");
+      // console.log("Login not successful");
+      this.alertify.error("pls give a proper login cred")
+
 
     }
 
