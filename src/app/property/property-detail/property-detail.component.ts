@@ -1,4 +1,3 @@
-import { PropertyI } from 'src/app/Services/property-i';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
