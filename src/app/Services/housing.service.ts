@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { map, retryWhen } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 import { Iproperty } from '../model/iproperty';
 import { Property } from '../model/property';
@@ -20,25 +20,7 @@ export class HousingService {
             propertiesArray.push(data[id])
           }
         }
-        // let propertiesArray: PropertyI[] = [];
-        // let i: number = 0;
-        // for (let val of data) {
-        //   const obj: PropertyI = {
-        //     id: val.id,
-        //     Name: val.Name,
-        //     price: val.Price,
-        //     Type: val.Type,
-        //     SellRent:val.SellRent,
-        //     Image:val.Image
-        //   };
-        //   propertiesArray.push(obj);
-        // }
-        // for(let prop in data){
-        //   console.log(prop);
-        //   if(data.hasOwnProperty()) {
-        //     // propertiesArray.push(prop);
-        //   }
-        // }
+
         console.log(propertiesArray);
 
         return propertiesArray;
@@ -47,7 +29,39 @@ export class HousingService {
 
     return this.http.get<Iproperty[]>('data/properties.json')
   }
+
+
+
   addProperty(property:Property){
-    localStorage.setItem('newProp',JSON.stringify(property))
+    let newProp:Property=property
+
+    // Add new property to array if newProp already exist in local storage
+    let curProp=localStorage.getItem('newProp')
+    // if(curProp){
+    //   newProp = [property, ...JSON.parse(localStorage.getItem('newProp'))]
+    // }
+    if(curProp){
+      localStorage.setItem('newProp',JSON.stringify(newProp))
+
+    }
+
+    localStorage.setItem('newProp',JSON.stringify(newProp))
   }
+
+
+
+  newPropID() {
+    let currentPID = localStorage.getItem('PID');
+
+    if (currentPID) {
+      localStorage.setItem('PID', String(+currentPID + 1));
+      return +currentPID ;
+    } else {
+      localStorage.setItem('PID', '101');
+      return 101;
+    }
+  }
+
+
+
 }

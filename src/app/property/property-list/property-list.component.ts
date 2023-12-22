@@ -23,10 +23,12 @@ export class PropertyListComponent implements OnInit {
 
       const newProperty = JSON.parse(localStorage.getItem('newProp') ?? 'null');
 
+
       if(newProperty.SellRent===this.SellRent){
         this.properties=[newProperty, ...this.properties]
       }
-      console.log(data);
+      // this.properties.push(newProperty[0])
+      console.log(this.properties);
       console.log(this.route.snapshot.url.toString());
 //
     }),
